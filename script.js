@@ -6,8 +6,17 @@ document.addEventListener("DOMContentLoaded", function () {
         li.style.setProperty("--x", Math.random());
         li.style.setProperty("--d", Math.random());
         li.style.setProperty("--s", Math.random());
+
+        li.style.pointerEvents = "none";
+
         setTimeout(() => {
             squareContainer.appendChild(li);
         }, Math.random() * 5000);
     }
+
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function () {
+            console.log(`Clicked: ${this.href}`);
+        });
+    });
 });

@@ -84,6 +84,7 @@ p {
   width: 100%;
   height: 100%;
   z-index: 1;
+  pointer-events: none;
 }
 
 .bg-bubbles li {
@@ -98,6 +99,7 @@ p {
   width: calc(30px + 50px * var(--s));
   height: calc(30px + 50px * var(--s));
   opacity: 0.7;
+  pointer-events: none; 
 }
 
 @keyframes square {
@@ -109,4 +111,8 @@ p {
 .social-icons i {
   font-size: 50px;
   margin: 10px;
+}
+
+.social-icons a, .cta-link {
+  pointer-events: auto;
 }
