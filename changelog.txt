@@ -1,0 +1,11 @@
+blog.html
+02/13/2025
+- Fixed image sizing 
+- Added navbar
+- Added footer
+- Fixed reference to images, .js and .css files
+- Added visibility so user knows what page they're on
+- Made all .html nav-link active
+- Stored photos in img 
+- Made all photo references local
+TBN-01
