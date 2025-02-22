@@ -49,7 +49,7 @@ a {
 
 h1, p {
   font-family: 'Montserrat', sans-serif;
-  color: #000000;
+  color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
@@ -128,4 +128,50 @@ p {
 
 .social-icons a, .cta-link {
   pointer-events: auto;
+}
+
+/* Blog Elements */
+.blog-article {
+  max-width: 40%;
+  padding: 8px;
+  background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3)) !important;
+  border-radius: 5px;
+}
+
+.blog-article p {
+    font-size: 14px;
+    padding: 8px;
+    color: white;
+}
+
+.blog-article h2 {
+  font-size: 20px;
+  padding: 8px;
+  color: white;
+}
+
+.blog-article h1, .archive h1  {
+    color: white; 
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-list img {
+    padding: 8px;
+    border-radius: 15px;
+}   
+
+.archive {
+    max-width: 25%;
+    padding: 15px;
+    background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3)) !important;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.blog-list ul, .blog-list a {
+    color: white;
 }
