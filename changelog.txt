@@ -10,15 +10,6 @@ blog.html
 - Made all photo references local
 TBN-01
 
-about.html, projects.html, blog.html
-02/22/2025
-- Added navbar
-- Tweaked navbar buttons, whatever page you're on the corresponding button is active
-- Tweaked about.html and projects.html text to be centered
-- Moved some blog.html text to about.html
-- Added textarea and submit button to projects.html
-koopakatz
-
 about.html
 02/23/2025
 - Added header
