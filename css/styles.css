@@ -1,6 +1,4 @@
 body {
-  padding-top: 100px;
-  padding-left: 50px;
   background: #303e44;
   animation: colorchange 10s infinite;
   overflow-x: hidden;
@@ -134,4 +132,15 @@ p {
 a.text-white {
   display: inline-block;
   text-decoration: none;
+}
+
+.footeer{
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.footeer .container-fluid{
+  max-width: 100%;
+  padding: 0 20px;
 }
