@@ -9,3 +9,15 @@ blog.html
 - Stored photos in img 
 - Made all photo references local
 TBN-01
+
+about.html
+02/23/2025
+- Added header
+- Added active nav bar 
+TBN-01
+
+projects.html
+02/23/2025
+- Added header
+- Added active nav bar
+TBN-01
