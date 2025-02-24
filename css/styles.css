@@ -1,5 +1,6 @@
 body {
-  padding-top: 70px;
+  padding-top: 100px;
+  padding-left: 50px;
   background: #303e44;
   animation: colorchange 10s infinite;
   overflow-x: hidden;
@@ -128,4 +129,9 @@ p {
 
 .social-icons a, .cta-link {
   pointer-events: auto;
+}
+
+a.text-white {
+  display: inline-block;
+  text-decoration: none;
 }

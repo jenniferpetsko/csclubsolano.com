@@ -18,3 +18,15 @@ about.html, projects.html, blog.html
 - Moved some blog.html text to about.html
 - Added textarea and submit button to projects.html
 koopakatz
+
+about.html
+02/23/2025
+- Added header
+- Added active nav bar 
+TBN-01
+
+projects.html
+02/23/2025
+- Added header
+- Added active nav bar
+TBN-01
