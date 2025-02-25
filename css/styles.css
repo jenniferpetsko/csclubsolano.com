@@ -82,6 +82,12 @@ body {
   color: var(--primary);
 }
 
+.main-nav a.active,
+.main-nav a.active:hover {
+  color: var(--primary);
+  font-weight: bold;
+}
+
 .menu-toggle {
   display: none;
   background: none;
