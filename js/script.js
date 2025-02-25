@@ -90,15 +90,15 @@ function loadLucide() {
   class BlogHighlightsSection {
     constructor() {
       this.highlights = [
-        { id: "1", title: "Club Creation", date: "July 22, 2024", image: "https://placehold.co/200x200", url: "#" },
+        { id: "1", title: "Club Creation", date: "July 22, 2024", image: "../img/Club_Creation.jpg", url: "#" },
         {
           id: "2",
           title: "First Promotion Day",
           date: "September 4, 2024",
-          image: "https://placehold.co/200x200",
+          image: "../img/Club_Promo.jpg",
           url: "#",
         },
-        { id: "3", title: "UC Davis Trip", date: "January 27, 2025", image: "https://placehold.co/200x200", url: "#" },
+        { id: "3", title: "UC Davis Trip", date: "January 27, 2025", image: "../img/UC_Davis.jpg", url: "#" },
       ]
       this.container = document.querySelector(".blog-highlights-grid")
       this.init()
