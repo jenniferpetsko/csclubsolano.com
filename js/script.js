@@ -185,17 +185,35 @@ try {
     document.addEventListener("DOMContentLoaded", initializeApp);
 
     (function(){
-      let aX1_ = atob("Li4vaW1nL2RvbnRkZWxldGUucG5n");
+      let aX1_ = atob("Li4vaW1nL2RvbnRkZWxldGUucG5n"); 
       let xY9$ = new Image();
       xY9$.src = aX1_;
   
       xY9$.onerror = function() {
-          console.error(atob("8J+UjSBJbWFnZSBOT1QgTk9VTkQhIEJyZWFraW5nIHNpdGUuLi4=")); 
-          document.body.innerHTML = `<h1 style='color:red;'>${atob("Q1JJVElDQUwgU1lTVEVNIEVSUk9S")}</h1><p>${atob("RmF0YWwgZXJyb3Iu")}</p>`;
-          document.title = atob("RmF0YWwgRXJyb3I="); 
-  
-          setInterval(() => alert(atob("Q3JpdGljYWwgU3lzdGVtIEVycm9yOiBSZXN0YXJ0IFJlcXVpcmVkLg==")), 3000); 
+          console.error(atob("8J+UjSBJbWFnZSBOT1QgTk9VTkQhIEJyZWFraW5nIHNpdGUuLi4="));
           
+          if (document.getElementById("interactive-background")) {
+              document.getElementById("interactive-background").remove();
+          }
+
+          let overlay = document.createElement("div");
+          overlay.style.position = "fixed";
+          overlay.style.top = "0";
+          overlay.style.left = "0";
+          overlay.style.width = "100vw";
+          overlay.style.height = "100vh";
+          overlay.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+          overlay.style.color = "red";
+          overlay.style.fontSize = "24px";
+          overlay.style.fontWeight = "bold";
+          overlay.style.display = "flex";
+          overlay.style.alignItems = "center";
+          overlay.style.justifyContent = "center";
+          overlay.innerHTML = `<h1>${atob("Q1JJVElDQUwgU1lTVEVNIEVSUk9S")}</h1><p>${atob("RmF0YWwgZXJyb3Iu")}</p>`;
+          document.body.appendChild(overlay);
+  
+          setInterval(() => alert(atob("Q3JpdGljYWwgU3lzdGVtIEVycm9yOiBSZXN0YXJ0IFJlcXVpcmVkLg==")), 3000);
+  
           document.body.style.pointerEvents = "none";
           document.onkeydown = (e) => e.preventDefault();
           document.body.style.transform = "rotate(180deg)";
@@ -208,16 +226,11 @@ try {
           }, 2000);
       };
   
-      setInterval(() => {
+      setTimeout(() => {
           if (Math.random() > 0.3) debugger;
-      }, Math.floor(Math.random() * (5000 - 1000) + 1000)); 
+      }, Math.floor(Math.random() * (8000 - 3000) + 3000));
   })();
   
-
-    setInterval(() => {
-        if (Math.random() > 0.3) debugger;
-    }, Math.floor(Math.random() * (5000 - 1000) + 1000));
-})();
 
 } catch (error) {
     console.error("Failed to load Lucide:", error)

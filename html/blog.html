@@ -1,103 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page Title</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
 <body>
+	<canvas id="interactive-background"></canvas>
 
-    <nav class="navbar navbar-expand-lg navbar-dark top">
-      <div class="container">
-          <a class="navbar-brand" href="#">SCC CS Club</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+	<div class="wrapper">
+		<!-- Header -->
+		<header id="header" class="header">
+			<div class="container">
+				<a href="/" class="logo">< SCC CS Club /></a>
+				<button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+					<i data-lucide="menu"></i>
+				</button>
+				<nav id="main-nav" class="main-nav">
+					<ul>
+						<li><a href="about.html">About</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="blog.html" class="active">Blog</a></li>
+						<li><a href="calendar.html">Calendar</a></li>
+					</ul>
+				</nav>
+				<a href="#membership" class="button-primary desktop-only">Membership</a>
+			</div>
+		</header>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                  <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
-                  <li class="nav-item"><a class="nav-link" href="calendar.html">Calendar</a></li>
-                  <li class="nav-item"><a class="nav-link" href="test.html">Test</a></li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+		<!-- Main Content -->
+		<main>
+			<section class="generic-section">
+				<div class="container">
+					<h2 class="section-title">Page Title</h2>
+					<p>Welcome to this page! Customize this content as needed.</p>
+				</div>
+			</section>
+		</main>
 
-     <div class="container mt-5">
-    <h1 class="text-center">Computer Science Club Blog</h1>
-    <p class="lead text-center">blah blah filler text here</p>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<p>&copy; 2025 < SCC CS Club /></p>
+					<div class="social-links">
+						<a href="https://discord.com/invite/8QXd5Xrw8A" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+							<i class="fa-brands fa-discord"></i>
+						</a>
+						<a href="https://github.com/jenniferpetsko/csclubsolano.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+							<i data-lucide="github"></i>
+						</a>
+						<a href="https://www.instagram.com/computerscience.scc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+							<i data-lucide="instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-    <div class="container mt-4">
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="card mb-4">
-            <img src="../img/UC_Davis.jpg" class="card-img-top" alt="picture of the computer science club at UC Davis">
-            <div class="card-body text-center">
-              <h2 class="card-title">CS Club UC Davis Tour</h2>
-              <p class="card-text">The Computer Science Club of Solano Community College was founded on August 12th, 2024, by our President, Jennifer Petsko.</p>
-              <p class="card-text">Since then, our club has grown tremendously, amassing over 100 Discord members, surpassing 50 official members, and regularly hosting well-attended meetings.</p>
-              <p class="card-text">Recently, the Computer Science Club, joined by the MESA Club and Phi Theta Kappa, traveled to UC Davis for an exciting tour.</p>
-              <a href="#" class="btn btn-primary">Read More</a> 
-            </div> 
-          </div>
-        </div>
-      </div>
-    </div>
-      
-    <div class="container text-center mt-4">
-    <img src="../img/cat.jpg" alt="not a picture of the computer science club at UC Davis" width="200" height="125">
-    </div>
+	<script src="../js/script.js"></script>
+</body>
 
-    <footer class="footer bg-dark text-white py-3 w-100">
-      <div class="container-fluid text-center text-md-start">
-        <div class="container-fluid px-0">
-          <div class="row align-items-center mx-0">
-            <!-- quick links-->
-             <div class="col-md-4 mb-2 mb-md-0 text-center text-md-start">
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                <li class="list-inline-item"><a href="about.html" class="text-white text-decoration-none">About</a></li>
-                <li class="list-inline-item"><a href="projects.html" class="text-white text-decoration-none">Projects</a></li>
-                <li class="list-inline-item"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
-                <li class="list-inline-item"><a href="calendar.html" class="text-white text-decoration-none">Calendar</a></li>
-              </ul>
-             </div>
-  
-             <!-- copyright -->
-              <div class="col-md-4 text-center">
-                <p class="mb-0">&copy; 2025 SCC Computer Science Club</p>
-              </div>
-            <!-- social media icons -->
-            <div class="col-md-4 text-center text-md-end">
-              <a href="https://github.com/jenniferpetsko/csclubsolano.com" class="text-white mx-2" target ="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-  
-              <a href="https://www.instagram.com/computerscience.scc/" class="text-white mx-2" target ="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i>
-  
-              <a href="https://discord.gg/GfK8VTmabH" class="text-white mx-2" target ="_blank" rel="noopener noreferrer">
-                <i class="fab fa-discord"></i>
-              </a>
-            </div>
-  
-          </div>
-         </div>
-        </div>
-    </footer>
-
-    <!-- FontAwesome -->
-     <script src="https://kit.fontawesome.com/4161556dff.js" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
-  </body>
 </html>
