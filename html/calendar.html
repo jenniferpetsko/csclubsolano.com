@@ -15,10 +15,12 @@
 	<canvas id="interactive-background"></canvas>
 
 	<div class="wrapper">
+
+
 		<!-- Header -->
 		<header id="header" class="header">
 			<div class="container">
-				<a href="/" class="logo"> SCC CS Club /></a>
+				<a href="/" class="logo">SCC CS Club</a>
 				<button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
 					<i data-lucide="menu"></i>
 				</button>
@@ -34,39 +36,38 @@
 			</div>
 		</header>
 
-    <!-- Google Calendar -->
-    <main>
-      <section class="calendar-section">
-        <div class="container">
-          <h2 class="section-title">Calendar</h2>
-         <p class="section-sub">filler text here</p>
+		<!-- Main Content -->
+		<main>
+			<section class="calendar-section">
+				<div class="container">
+					<h2 class="section-title">Calendar</h2>
+					<p class="section-sub">Stay updated with our upcoming events and meetings.</p>
 
-          <!-- Google Calendar here bud-->
-           <div class="calendar-container">
-            <iframe
-            src="https://calendar.google.com/calendar/embed?src=f64u131to44gn3tn8g62ov2u1s%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles"
-            title="SCC CS Google Calendar"
-            frameborder="0"
-            scrolling="no"
-            height="600"
-            width="800"
-            class="w-full"
-            ></iframe>
-           </div>
+					<!-- Google Calendar -->
+					<div class="calendar-container">
+						<iframe 
+							src="https://calendar.google.com/calendar/embed?src=f64u131to44gn3tn8g62ov2u1s%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles"
+							title="SCC CS Google Calendar"
+							frameborder="0"
+							scrolling="no"
+              height="600"
+              width="800"
+							class="calendar-iframe">
+						</iframe>
+					</div>
+				</div>
+			</section>
 
-        </div>
-      </section>
-    </main>
-      
-    ></iframe>
-      
-   <!-- footer -->
+          <!-- gradient section to match index.html -->
+    <section class="membership-section"></section>
+
+		</main>
+
+		<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-content">
-					<p>&copy; 2025
-						 SCC CS Club />
-					</p>
+					<p>&copy; 2025 SCC CS Club</p>
 					<div class="social-links">
 						<a href="https://discord.com/invite/8QXd5Xrw8A" target="_blank" rel="noopener noreferrer" aria-label="Discord">
 							<i class="fa-brands fa-discord"></i>
@@ -81,6 +82,9 @@
 				</div>
 			</div>
 		</footer>
-    <script src="../js/script.js"></script>
-  </body>
-</html>"
+	</div>
+
+	<script src="../js/script.js"></script>
+</body>
+
+</html>
