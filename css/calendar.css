@@ -1,5 +1,21 @@
 .calendar-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.calendar-iframe{
+    width: 90%;
+    max-width: 800px;
+    height: 600px;
+    border: none;
+}
+
+.calendar_section .section-titlee{
+    padding-top: 50px;
+}
+

