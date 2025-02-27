@@ -1,4 +1,4 @@
-# Sets up the python virtual environment required for development!
+# Sets up the python virtual environment for development with Django!
 
 # Please input the follow line into your command line to run: python dev_venv_setup.py
 
