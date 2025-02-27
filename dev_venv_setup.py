@@ -1,6 +1,6 @@
 # Sets up the python virtual environment for development with Django!
 
-# Please input the follow line into your command line to run: python dev_venv_setup.py
+# Please input the following line into your command line to run: python dev_venv_setup.py
 
 import os
 import subprocess
