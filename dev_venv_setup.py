@@ -16,7 +16,7 @@ def create_virtual_environment(env_name="venv"):
         sys.exit(1)
 
 def activate_virtual_environment(env_name="venv"):
-    # Activates the virtual environment 
+    # Displays how to activate the virtual environment, and the next steps of the installation 
     if os.name == "nt":
         venv_activate_path = os.path.join(env_name, "Scripts", "activate")
     else:
