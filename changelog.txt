@@ -21,3 +21,11 @@ projects.html
 - Added header
 - Added active nav bar
 TBN-01
+
+about.html
+04/06/2025
+- Added more content
+
+styles.css
+- Added .hero-about and .center-about
+koopakatz
