@@ -134,6 +134,11 @@ body {
   margin-bottom: 2rem;
 }
 
+.hero-text-adjust {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
 .tagline {
   text-align: center;
   font-size: 1.2rem;
