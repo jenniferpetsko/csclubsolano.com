@@ -98,8 +98,15 @@ body {
 
 /* hero section */
 .hero {
-  min-height: 100vh;
+  min-height: 85vh;
   padding: 8rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-blog {
+  min-height: 0vh;
+  padding: 0rem 0 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -126,6 +133,12 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.blog-highlights-style-change {
+  .hero-blog& {
+      padding-bottom: 0px;
+  }
 }
 
 .hero-text {
@@ -188,6 +201,11 @@ body {
 /* blog highlights section */
 .blog-highlights-section {
   padding: 6rem 0;
+}
+
+/* blog highlights section */
+.blog-highlights-section-blog {
+  padding: 0rem 0;
 }
 
 .blog-highlights-grid {
