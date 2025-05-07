@@ -608,6 +608,7 @@ main {
   height: 475px; 
   overflow-y: auto; 
   padding-top: 40px; 
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .membership-form-wrapper.style-change-2 iframe.style-change-7{
