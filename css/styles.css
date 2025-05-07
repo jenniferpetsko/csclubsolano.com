@@ -561,3 +561,53 @@ main {
 .center-about {
   text-align: center;
 }
+
+.stats-grid a,
+.stats-grid a:hover,
+.stats-grid a:visited {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.stats-grid a * {
+  color: inherit !important;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  color: inherit !important;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.stat-card svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+  margin-bottom: 8px;
+}
+
+.stat-card i {
+  font-size: 32px;
+  margin-bottom: 8px;
+  display: inline-block;
+  color: white;
+}
+
+.stat-card .stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.stat-card .stat-label {
+    font-size: 0.875rem;
+}
