@@ -126,7 +126,6 @@ class BlogHighlightsSection {
 }
 
 // main initialization function
-// main initialization function
 async function initializeApp() {
 try {
     const lucide = await loadLucide()
