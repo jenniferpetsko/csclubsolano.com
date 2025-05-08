@@ -618,3 +618,9 @@ main {
 body {
   overflow-y: scroll;
 }
+
+.scc-hacks-description {
+  *& {
+      color: var(--text-muted);
+  }
+}
