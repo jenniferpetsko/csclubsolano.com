@@ -614,3 +614,7 @@ main {
 .membership-form-wrapper.style-change-2 iframe.style-change-7{
   width: 100%;
 }
+
+body {
+  overflow-y: scroll;
+}
