@@ -302,28 +302,29 @@ const observer = new IntersectionObserver(
 
 observer.observe(document.querySelector("#about"));
 
-// elements
+// Get elements
 const modal = document.getElementById("image-modal");
 const modalImg = document.getElementById("modal-image");
 const closeBtn = document.getElementById("modal-close");
 
-// Add click event to all images
+// Open modal when an image is clicked
 document.querySelectorAll("img").forEach((img) => {
-  img.style.cursor = "zoom-in"; // optional: make it clear it's clickable
+  img.style.cursor = "zoom-in";
   img.addEventListener("click", () => {
     modalImg.src = img.src;
     modal.style.display = "flex";
   });
 });
 
-// Close image on click or close button
-modal.addEventListener("click", () => {
-  modal.style.display = "none";
+// Close when clicking outside the image
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
 });
 
+// Close when clicking the X button
 closeBtn.addEventListener("click", (e) => {
-  // Prevents two clickes.
-  e.stopPropagation();
+  e.stopPropagation(); // optional
   modal.style.display = "none";
 });
-
