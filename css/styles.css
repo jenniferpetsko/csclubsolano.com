@@ -654,7 +654,6 @@ body {
 
 .logs-section {
   padding: 4rem 2rem;
-  background-color: #000; /* dark background */
   color: #fff;
 }
 
@@ -697,8 +696,9 @@ body {
 
 /* Individual log items inside */
 .log-card {
-  background: #fff;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border, #444);
+  border-radius: 1rem;
   padding: 1rem 1.25rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
   transition: transform 0.3s ease;
@@ -733,12 +733,13 @@ body {
 }
 
 .read-more {
+  margin-left: .5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 22px;
   height: 22px;
-  background-color: #444;
+  background-color: rgb(147, 51, 234);
   color: white;
   border-radius: 4px;
   text-decoration: none;
@@ -747,6 +748,6 @@ body {
 }
 
 .read-more:hover {
-  background-color: #222;
+  background-color: #8014cc;
   transform: scale(1.1);
 }
