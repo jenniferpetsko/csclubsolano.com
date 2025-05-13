@@ -265,17 +265,35 @@ body {
 
 .achievements-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .achievement-card {
+  text-align: center;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border);
   border-radius: 0.5rem;
   padding: 1rem;
-  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-4px);
+}
+
+.achievement-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.achievement-label {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 0.25rem;
 }
 
 /* membership section */
