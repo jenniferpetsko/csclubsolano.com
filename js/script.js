@@ -254,4 +254,76 @@ try {
 // initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", initializeApp)
 
-// r
+// Adding animation for the attendies colleges and teams numbers
+const counters = document.querySelectorAll(".counter");
+let counted = false;
+
+const animateCounters = () => {
+  if (counted) return;
+  counted = true;
+
+  counters.forEach((counter) => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+
+    // total animation time. in milliseconds.
+    const duration = 750;
+    const steps = 100;
+    const increment = target / steps;
+    const delay = duration / steps;
+
+    const updateCount = () => {
+      count += increment;
+
+      if (count < target) {
+        counter.innerText = Math.floor(count);
+        setTimeout(updateCount, delay);
+      } else {
+        counter.innerText = target + (target === 35 ? "+" : "");
+      }
+    };
+
+    updateCount();
+  });
+};
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounters();
+      }
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+observer.observe(document.querySelector("#about"));
+
+// elements
+const modal = document.getElementById("image-modal");
+const modalImg = document.getElementById("modal-image");
+const closeBtn = document.getElementById("modal-close");
+
+// Add click event to all images
+document.querySelectorAll("img").forEach((img) => {
+  img.style.cursor = "zoom-in"; // optional: make it clear it's clickable
+  img.addEventListener("click", () => {
+    modalImg.src = img.src;
+    modal.style.display = "flex";
+  });
+});
+
+// Close image on click or close button
+modal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+closeBtn.addEventListener("click", (e) => {
+  // Prevents two clickes.
+  e.stopPropagation();
+  modal.style.display = "none";
+});
+
