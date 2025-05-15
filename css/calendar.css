@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 64px;
 }
 
 .calendar-iframe{
@@ -18,4 +19,3 @@
 .calendar_section .section-titlee{
     padding-top: 50px;
 }
-
